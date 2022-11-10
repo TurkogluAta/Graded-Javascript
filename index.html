@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>JavaScript demo</title>
+	  <!-- add the link tag to the style.css which will be in a folder -->
+	  <link rel="stylesheet" href="css/styles.css">
+
+	  <!-- used to embed client side script/JS -->
+	  <script type="text/javascript">
+
+// Example 1
+
+		//it is for input;
+		var num;
+		num = parseInt(prompt("Choose a number", "1 - 12"));
+
+		//code that will work if the selected number is between 1 and 3;
+		if((num => 1) && (num <= 3) ){
+			document.write("the number you choose is between 1 - 3");
+
+		//code that will work if the selected number is between 4 and 6;
+		}else if((num => 4) && (num <= 6)){
+			document.write("the number you choose is between 4 - 6");
+
+		//code that will work if the selected number is between 7 and 9;
+		}else if((num => 7) && (num <= 9)){
+			document.write("the number you choose is between 7 - 9");
+
+		//code that will work if the selected number is between 10 and 12;
+		}else if((num => 10) && (num <= 12)){
+			document.write("the number you choose is between 10 - 12");
+
+		//code that will work if input is wrong;
+		}else{
+			document.write("I told you to choose a number from 1 to 12  >_<");
+		}
+
+// Example 2
+
+		//it is for input;
+		var grade;
+		grade = parseInt(prompt("what is the grade you recieved ? If you get more than 60 points, you can pass the course."));
+
+		//code that will work if the grade lower than 60;
+		if(grade<=60){
+		document.write(" You have failed");
+		}
+
+		//code that will work if the grade upper than 60;
+		else if(grade=>60){
+		document.write(" You have passed");
+		}
+
+		//code that will work if input is wrong;
+		else{
+		document.write(" I wanted you to enter your grade >_<");
+		}
+
+// Example 3
+
+		//it is for input;
+		var secret = 3;
+    var guess = parseInt(prompt("Enter a guess 1-5"));
+
+
+    if(secret == guess){
+    document.write(" Guessed it");
+
+    }else if(secret < guess){
+    document.write(" guess is too high");
+
+    }else if(secret > guess){
+    document.write(" guess is too low");
+
+    }else{
+    document.write(" I told you to choose a number from 1 to 5  >_<")
+    }
+
+		</script>
+
+</html>
